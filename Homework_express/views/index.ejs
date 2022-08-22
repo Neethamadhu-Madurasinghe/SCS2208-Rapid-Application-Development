@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test</title>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans:wght@500&family=Roboto:wght@400;700&display=swap');
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      font-family: 'Roboto', sans-serif;
+    }
+    h1 {
+      color: maroon;
+    }
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid;
+      padding: 20px;
+
+    }
+    </style>
+</head>
+<body>
+  <div>
+    <h1><%= locals.name %></h1>
+    <h2><%= locals.age %></h2>
+    <p><%= locals.description %></p>
+  </div>
+</body>
+</html>

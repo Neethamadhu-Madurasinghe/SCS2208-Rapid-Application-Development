@@ -1,0 +1,19 @@
+[
+  {
+    "name": "Saman Kumara",
+    "age": 10,
+    "description": "Hello"
+  },
+
+  {
+    "name": "Gunapala",
+    "age": 12,
+    "description": "World"
+  },
+
+  {
+    "name": "Somapala",
+    "age": 15,
+    "description": "Hell world"
+  }
+]
