@@ -1,0 +1,26 @@
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Static Assets -->
+  <link rel="stylesheet" href="src/styles.css">
+  
+  <title>20001223</title>
+</head>
+
+
+<body class="body-class">
+  <% if(locals.numberofLoggins == 1) { %> 
+    <p>Welcome to the website for first time</p>
+  <% }else { %>
+    <p>You have accessed  <%= locals.numberofLoggins || "ERROR" %> times</p>
+    <% } %>
+    
+    
+    <form action="/logout?_method=DELETE" method="POST" class="form">
+      <button class="btn">Logout</button>
+    </form>
+  <script src="src/login.js"></script>
+</body>
+</html>

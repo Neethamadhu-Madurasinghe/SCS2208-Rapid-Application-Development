@@ -1,0 +1,35 @@
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Static Assets -->
+  <link rel="stylesheet" href="src/styles.css">
+  
+  <title>20001223</title>
+</head>
+
+
+    <div class="form-container container" id="signup-form">
+        <form action="/profile" method="post" enctype="multipart/form-data" class="form">
+            <label for="email">Email Address: </label>
+            <input id="email" name="email" type="email" autocomplete="email"  autofocus class="form-input">
+
+            <label for="username">Full Name: </label>
+            <input id="username" name="username" type="text" autocomplete="username"  autofocus class="form-input">
+
+            <label for="message">Message: </label>
+            <input id="message" name="message" type="text" autocomplete="current-password"  class="form-input">
+
+            <label for="photo">Photo: </label>
+            <input type="file" name="photo" />
+
+            <button class="btn" type="submit">Submit</button>
+        </form>
+    </div>
+
+
+
+  <script src="./src/home.html"></script>
+</body>
+</html>

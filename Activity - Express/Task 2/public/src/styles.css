@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800&family=Heebo&family=Montserrat:wght@600&family=Open+Sans:wght@500&family=Roboto:wght@300;400;700&display=swap');
+:root {
+    --button-color: #0d4fd5;
+}   
+
+* {
+    /* this makes total size = size + padding + boarder */
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+label {
+  font-weight: bold;
+  margin: 5px;
+}
+
+input {
+  border: solid 3px rgb(224, 222, 222);
+  width: 100%;
+  padding: 5px;
+  
+}
+
+input:focus {
+  outline: none;
+}
+
+.btn-container {
+    height: 200px;
+    max-width: 400px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 10px rgb(134, 134, 134);
+}
+
+.form-container {
+    height: 500px;
+    max-width: 400px;
+    width: 90%;
+}
+
+
+.btn {
+    background-color: var(--button-color);
+    color: white;
+    width: 100%;
+    height: 40px;
+    font-size: 0.85rem;
+    border: none;
+    border-radius: 5px;
+    margin-top: 25px;
+    box-shadow: 0px 0px 10px rgb(134, 134, 134);
+}
+
+.btn:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+.form {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.form-input { 
+    margin: 3px;
+    font-size: 18px;
+}
+
+.hide {
+    display: none;
+}
