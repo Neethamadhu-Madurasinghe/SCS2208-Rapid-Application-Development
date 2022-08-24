@@ -11,8 +11,13 @@ app.get("/", (req, res) => {
   res.render("home");
 });
 
+app.get("/successful", (req, res) => {
+  res.send("Upload successful !");
+});
+
 app.post('/profile', upload.single('photo'), function (req, res, next) {
   console.log(req.file)
-})
+  res.redirect("/successful")
+});
 
 app.listen(4000);
