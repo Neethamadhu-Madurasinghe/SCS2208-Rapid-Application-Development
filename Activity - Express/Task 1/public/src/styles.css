@@ -34,9 +34,9 @@ body {
 
 .container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     box-shadow: 0px 0px 10px rgb(134, 134, 134);
 }
 
@@ -70,17 +70,36 @@ body {
 
 .form {
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
+    justify-content: space-around;
+    align-items: stretch;
+    border: 0px solid black;
+    height: 270;
 }
 
 
 .form-input { 
     margin: 3px;
-    font-size: 18px;
+    font-size: 14px;
+    height: 30px;
+    width: 250 ;
 }
 
 .hide {
     display: none;
+}
+
+.image{
+    height: 200;
+    width: 200;
+}
+.title{
+    margin: auto;
+}
+.regLink{
+    color: red;
+    text-decoration: none;
+}
+.rehLinkPara{
+    font-size: 14;
 }

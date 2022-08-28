@@ -9,7 +9,7 @@ const methodOverride = require("method-override");
 const initializePassport = require("./passport-config.js");
  
 initializePassport(passport,
-  username => users.find(user => user.username === username),
+  email => users.find(user => user.email === email),
   id => users.find(user => user.id === id)
   );
 
@@ -57,7 +57,7 @@ app.post("/register", async (req, res) => {
     const hashedPassword = await bcrypt.hash(req.body.password, 10);
     users.push({
       id: Date.now().toString(),
-      username: req.body.username,
+      email: req.body.email,
       password: hashedPassword,
       numberOfLoggins: 0
     });
@@ -80,6 +80,7 @@ app.delete("/logout", (req, res) => {
     res.redirect('/');
   });
 });
+
 
 
 // Middleware to check wther user is authenticated
